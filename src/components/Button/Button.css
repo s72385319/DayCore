@@ -1,0 +1,23 @@
+.btn {
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-165%, 30%);
+}
+
+.btn.active {
+    background-color: rgb(67, 199, 252);
+    border-color: rgb(14, 235, 255);
+}
+
+.btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: white;
+    background-color: #222;
+    border-color: white;
+}
