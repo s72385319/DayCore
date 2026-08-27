@@ -16,7 +16,7 @@ function WayToTeach({ title, description }) {
   )
 }
 
-/* const promptName = prompt("Enter your name here: ") */   // цей спосіб треба переробити на більш сучасніший 
+// const promptName = prompt("Enter your name here: ") // цей спосіб треба переробити на більш сучасніший 
 
 const user = {
   // name: promptName ? promptName : "NoName",
@@ -32,7 +32,6 @@ const Profile = () => {
   )
 }
 
-
 function App() {
 
   console.log("App Component Render")
@@ -46,25 +45,24 @@ function App() {
   return (
     <div>
       <header className="headerClass">
-        <CountDate day="0" week="0" />
-        <section>
-          <DateTime />
-        </section>
         <Profile />
-        <RandomPrediction />
       </header>
-      <main>
+      <DateTime />
+      
+      <main className="mainClass">
+        <section id="center">
+          <CountDate day="0" week="0" />
+          <RandomPrediction />
+        </section>
         
-        <ul className="way">
-        <WayToTeach title={ways[0].title} description={ways[0].description} />
-        <WayToTeach title={ways[1].title} description={ways[1].description} />
+        <ul className="ways">
+          {ways.map(ways => <WayToTeach key={ways.title} {...ways} />)}
         </ul>
         
         <Button isActive={content == "ways"} onPress={() => handleClick("ways")}>Contacts</Button>
         <Button isActive={content == "easy"} onPress={() => handleClick("easy")}>Version</Button>
         <Button isActive={content == "program"} onPress={() => handleClick("program")}>Information</Button>
         <div style={{
-          color: "white",
           fontFamily: "monospace",
           textAlign: "center",
           marginTop: "80px",

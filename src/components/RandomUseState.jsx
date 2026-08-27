@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function RandomPrediction() {
-  const [randomPrediction, setRandomPrediction] = useState(null)
+  const [randomPrediction, setRandomPrediction] = useState("You can generate a prediction here :)")
     
   const randomChoiсe = () => {
     const prediction = [
@@ -18,19 +18,16 @@ function RandomPrediction() {
   }
 
     return (
-     <>
-       <h2>{randomPrediction}</h2>
-       <button
-          onClick={randomChoiсe}
-          style={{
-            borderRadius: 10,
-            width: 200,
-            height: 35,
-            transition: "125ms"
-          }}
-          className='btnRandom'>Generate prediction
-        </button>
-     </>
+      <>
+      <h2>{randomPrediction}</h2>
+        <div className="predictionClass">
+          <button
+            onClick={randomChoiсe}
+            className='btnRandom'>Generate prediction
+          </button>
+        </div>
+      </>
+    
     )
 }
 
