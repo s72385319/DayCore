@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function File({ imgNone }) {
+export function File({ imgNone }) {
   const [img, setImg] = useState(imgNone)
 
   return (
@@ -22,4 +22,12 @@ export default function File({ imgNone }) {
       </p>
     </>
   )
+}
+
+
+export default function UserImg() {
+  const user = {
+    imgUrl: "src/assets/photo_2025-02-20_17-13-28.jpg"
+  }
+  return <File imgNone={user.imgUrl} />
 }
