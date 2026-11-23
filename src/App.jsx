@@ -8,12 +8,11 @@ import UserImg from "./components/Profile"
 function App() {
   return (
     <div>
-      <header className="headerClass">
+      <header>
         <UserImg />
       </header>
       
       <DateTime />
-      
       <main>
         <section id="center">
           <CountDate day="0" week="0" />

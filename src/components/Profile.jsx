@@ -9,7 +9,7 @@ export function File({ imgNone }) {
       
       <p>
         <label className='custom-label'>
-          Select a photo
+          <div id='selectBtn'>Select a photo</div>
           <input
             type="file"
             accept="image/*"

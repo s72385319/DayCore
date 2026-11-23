@@ -10,15 +10,15 @@ header {
   justify-content: space-between;
   padding: 0 24px;
   height: 120px;
-  background-color: rgb(130, 130, 130);
-  color: #000;
+  background-color: #353638;
+  color: white;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 body {
-  background-color: #222;
+  background-color: #292a2c;
   min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
@@ -62,6 +62,7 @@ main {
 .microchoice {
   color: white;
   font-family: monospace;
+  /* font-family: Onest; */
   margin: 0 auto;
   max-width: 800px;
   line-height: 1.5;
@@ -96,6 +97,24 @@ main {
 
 .custom-label {
   font-size: 20px;
-  font-weight: 500;
-  font-family: monospace;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#selectBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 10px;
+  width: 200px;
+  background-color: #55565a;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.custom-label:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.507);
+  transition: 125ms;
 }
