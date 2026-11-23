@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import noPic from '../assets/noPic.jpg'
 
 export function File({ imgNone }) {
   const [img, setImg] = useState(imgNone)
@@ -27,7 +28,7 @@ export function File({ imgNone }) {
 
 export default function UserImg() {
   const user = {
-    imgUrl: "src/assets/photo_2025-02-20_17-13-28.jpg"
+    imgUrl: noPic
   }
   return <File imgNone={user.imgUrl} />
 }
