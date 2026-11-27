@@ -1,6 +1,6 @@
 # DayCore — a day tracker and a set of mini-tools.
 
-**Vercel deploy — [Live Demo](https://daycoretracker.vercel.app/)**
+**[Vercel Live Demo](https://daycoretracker.vercel.app/)**
 
 ## Technologies
 - Vite + React
