@@ -20,8 +20,8 @@ header {
 body {
   background-color: #292a2c;
   min-height: 100vh;
-  overflow-x: hidden;
-  width: 100%;
+  /* overflow-x: hidden; */
+  /* width: 100%; */
   height: 1000px;
   margin: 0;
   font-family: monospace;
@@ -49,7 +49,7 @@ main {
   background-color: #222;
   border-color: #ffffff;
   color: white;
-  width: 265px;
+  transform: scale(1.05);
   height: 50px;
 }
 

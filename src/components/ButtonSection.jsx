@@ -20,7 +20,6 @@ export default function ButtonSection() {
         fontFamily: "monospace",
         textAlign: "center",
         marginTop: "80px",
-        transform: "translateX(80px)",
       }}>
         {content ? <pre>{differences[content]}</pre> : "Click the button."}
       </div>   
